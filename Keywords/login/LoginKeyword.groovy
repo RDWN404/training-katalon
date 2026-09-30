@@ -40,6 +40,11 @@ public class LoginKeyword {
 			findTestObject('Login/txt_password'),
 			password
 		)
+		
+		WebUI.waitForElementClickable(
+			findTestObject('Login/btn_login'),
+			10
+		)
 
 		WebUI.click(
 			findTestObject('Login/btn_login')

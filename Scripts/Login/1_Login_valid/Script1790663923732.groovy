@@ -46,6 +46,12 @@ WebUI.setText(
 	password
 )
 
+// Wait until object visible (max 10s)
+WebUI.waitForElementClickable(
+	findTestObject('Login/btn_login'),
+	10
+)
+
 // Click Login
 WebUI.click(
 	findTestObject('Login/btn_login')
