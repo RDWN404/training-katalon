@@ -30,6 +30,7 @@ if (!folder.exists()) {
 	folder.mkdirs()
 }
 
+// variable time
 def timestamp = new Date().format('yyyyMMdd_HHmmss')
 
 // Open browser
