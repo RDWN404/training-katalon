@@ -38,7 +38,7 @@ WebUI.openBrowser('')
 // Open login page
 WebUI.navigateToUrl('https://saucedemo.com')
 
-// Test data
+// Test data login
 String username = 'standard_user'
 String password = 'secret_sauce'
 
