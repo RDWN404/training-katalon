@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>6_Login_conditional_logic</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a9c7c220-f39e-49d4-ba4e-9f91b458cc19</testCaseGuid>
-</TestCaseEntity>

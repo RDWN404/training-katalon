@@ -17,6 +17,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.io.File as File
+
+String projectPath = RunConfiguration.getProjectDir()
+
+String folderPath = projectPath + "/Screenshots"
+
+File folder = new File(folderPath)
+if (!folder.exists()) {
+	folder.mkdirs()
+}
+
+def timestamp = new Date().format('yyyyMMdd_HHmmss')
 
 // Open browser
 WebUI.openBrowser('')
@@ -66,6 +80,11 @@ WebUI.waitForElementVisible(
 // Verify products page
 WebUI.verifyElementVisible(
 	findTestObject('Product/txt_products')
+)
+
+//Take screenshot
+WebUI.takeScreenshot(
+	folderPath + "/login_${timestamp}.png"
 )
 
 // Close browser
